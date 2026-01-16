@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
 
         <p className="animate-fade-in-up animate-delay-100 mx-auto mb-8 max-w-[640px] text-xl leading-[1.47] tracking-[-0.01em] text-[#6e6e73] sm:text-2xl sm:leading-[1.42]">
-           Her gün, daha anlamlı.
+           Her geçen gün, daha anlamlı.
         </p>
 
         <div className="animate-fade-in-up animate-delay-200 flex flex-col items-center justify-center gap-4 sm:flex-row">
