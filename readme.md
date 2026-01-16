@@ -49,7 +49,7 @@ Müşteri paneli:
 
 ## Roller / seviyeler
 - Müşteri seviyesi
-- Admin seviyesi    
+- Admin hesabı    
 - Üretici seviyesi
 
 ## QR ve public sayfa
@@ -68,8 +68,8 @@ Müşteri paneli:
 - Yorumlar için spam/bot koruması olacak (hız limiti vb.).
 - Yorumlar silindiğinde public'te görünmeyecek; admin tarafında “silindi” durumu ile takip edilecek.
 
-## Üretici seviyesi
-- Üretici 1’den fazla kullanıcı olabilecek.
+## Üretici hesabı
+- Üretici hesabı 1’den fazla kullanıcı olabilecek.
 - Yeni kayıt: Parası ödenen, sayfası oluşturulmuş public hale getirilmiş kullanıcıların linkleri görülecek.
 - Ödeme sonrası sipariş otomatik “iş emri”ne dönüşecek ve üretici panelinde yönetilecek.
 - Durumlar kural setiyle ilerleyecek (durum makinesi mantığı).
