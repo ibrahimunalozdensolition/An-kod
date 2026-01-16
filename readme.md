@@ -48,7 +48,7 @@ Müşteri paneli:
 - Kullanıcı bir hayvan/sayfa seçip içerikleri, yorumları, üretim/QR durumunu ve temel metrikleri görebilecek.
 
 ## Roller / seviyeler
-- Müşteri seviyesi
+- Müşteri hesabı
 - Admin hesabı    
 - Üretici seviyesi
 
