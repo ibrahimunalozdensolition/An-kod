@@ -1,6 +1,10 @@
+import Navbar from "./components/Navbar";
+
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen items-center justify-center px-6">
+    <>
+      <Navbar />
+      <main className="relative flex min-h-screen items-center justify-center px-6">
       <div className="mx-auto max-w-[980px] text-center">
         
         <h1 className="animate-fade-in-up mb-4 text-6xl font-semibold leading-[1.08] tracking-[-0.015em] text-[#1d1d1f] sm:text-7xl lg:text-[80px]">
@@ -8,7 +12,7 @@ export default function Home() {
         </h1>
 
         <p className="animate-fade-in-up animate-delay-100 mx-auto mb-8 max-w-[640px] text-xl leading-[1.47] tracking-[-0.01em] text-[#6e6e73] sm:text-2xl sm:leading-[1.42]">
-          Bir QR. Hep yakın.
+           Her gün, daha anlamlı.
         </p>
 
         <div className="animate-fade-in-up animate-delay-200 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -29,5 +33,6 @@ export default function Home() {
 
       </div>
     </main>
+    </>
   );
 }

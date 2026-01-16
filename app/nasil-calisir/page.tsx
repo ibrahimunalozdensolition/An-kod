@@ -1,3 +1,5 @@
+import Navbar from "../components/Navbar";
+
 export default function NasilCalisir() {
   const steps = [
     {
@@ -33,7 +35,9 @@ export default function NasilCalisir() {
   ];
 
   return (
-    <main className="min-h-screen px-6 py-20">
+    <>
+      <Navbar />
+      <main className="min-h-screen px-6 py-20 pt-[68px]">
       <div className="mx-auto max-w-[980px]">
         
         <div className="mb-20 text-center">
@@ -80,5 +84,6 @@ export default function NasilCalisir() {
 
       </div>
     </main>
+    </>
   );
 }
