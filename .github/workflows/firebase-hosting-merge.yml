@@ -19,3 +19,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANIKOD_4EFDE }}
           channelId: live
           projectId: anikod-4efde
+        env:
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
