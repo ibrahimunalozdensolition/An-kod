@@ -48,9 +48,9 @@ Müşteri paneli:
 - Kullanıcı bir hayvan/sayfa seçip içerikleri, yorumları, üretim/QR durumunu ve temel metrikleri görebilecek.
 
 ## Roller / seviyeler
-- Müşteri
-- Admin
-- Üretici
+- Müşteri seviyesi
+- Admin seviyesi    
+- Üretici seviyesi
 
 ## QR ve public sayfa
 - Public kısım site üzerinden bir uzantı gibi olacak; benzersiz bir link olacak.
@@ -68,7 +68,7 @@ Müşteri paneli:
 - Yorumlar için spam/bot koruması olacak (hız limiti vb.).
 - Yorumlar silindiğinde public'te görünmeyecek; admin tarafında “silindi” durumu ile takip edilecek.
 
-## Üretici
+## Üretici seviyesi
 - Üretici 1’den fazla kullanıcı olabilecek.
 - Yeni kayıt: Parası ödenen, sayfası oluşturulmuş public hale getirilmiş kullanıcıların linkleri görülecek.
 - Ödeme sonrası sipariş otomatik “iş emri”ne dönüşecek ve üretici panelinde yönetilecek.
@@ -95,7 +95,7 @@ Müşteri paneli:
 | 3 | Kargoya verildi |
 | 4 | Teslim edildi |
 
-## Admin
+## Admin seviyesi
 - Kullanıcı yönetimi olacak; tüm kullanıcılar görünecek.
 - Kullanıcıların e-posta adresi ve telefon numarası admin panelinde görünecek.
 - Admin üretici hesaplarını da yönetebilecek.
