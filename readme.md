@@ -1,9 +1,9 @@
-# QR Mezarlık
+# An-Kod 
 
-Ölen hayvanlar için kişiselleştirilebilir bir anı sayfası oluşturulur. Bu sayfanın linki, fiziksel olarak 3D basılan bir QR ile mezar taşına/plataya yerleştirilir.
+Vefat eden sevdiklerimiz (insan veya hayvan) için kişiselleştirilebilir bir anı sayfası oluşturulur. Bu sayfanın linki, fiziksel olarak 3D basılan bir QR ile mezar taşına/plataya yerleştirilir.
 
 ## Proje özeti
-- Kullanıcı kayıt olur ve hayvanı için bir anı sayfası oluşturur.
+- Kullanıcı kayıt olur ve sevdiği kişi/hayvan için bir anı sayfası oluşturur.
 - Sayfa tasarlanır (arka plan, yerleşim, medya).
 - Ödeme sonrası sayfa **public** olur ve benzersiz link üzerinden erişilir.
 - Aynı linke bağlı QR fiziksel olarak üretilir ve süreç üretici panelinden takip edilir.
@@ -22,18 +22,18 @@ Kayıt → Şablon seçimi → İçerik yükleme → Önizleme → Ödeme → Ya
 - Ödeme öncesi önizleme sadece kullanıcıya özel olacak (public olmayacak).
 
 ## Ödeme modeli
-- Kullanıcı isterse aynı hesap içinde yeni bir hayvan/sayfa daha ekleyebilecek; **her yeni hayvan/sayfa için tekrar ödeme** alınacak.
-- Ek olarak ücret karşılığında “Yeni QR talep et” özelliği olacak; **aynı sayfanın linki değişmeyecek**, sadece yeni fiziksel QR talep edilecek.
+- Kullanıcı isterse aynı hesap içinde yeni bir anı sayfası daha ekleyebilecek; **her yeni sayfa için tekrar ödeme** alınacak.
+- Ek olarak ücret karşılığında "Yeni QR talep et" özelliği olacak; **aynı sayfanın linki değişmeyecek**, sadece yeni fiziksel QR talep edilecek.
 
 ### Ödeme kalemleri
-- Yeni hayvan/sayfa oluşturma (ilk kurulum)
+- Yeni anı sayfası oluşturma (ilk kurulum)
 - Fotoğraf sınırı (8 üstü) ek hak satın alma
-- “Yeni QR talep et” (aynı link için yeni fiziksel QR)
+- "Yeni QR talep et" (aynı link için yeni fiziksel QR)
 
 ## İçerik modeli (anılar)
 - İçerik “anılar” listesi gibi olacak: foto/video + tarih + açıklama + etiket.
 - İçerik üzerinde düzenleme yapılabilecek (kırpma, sıralama, görünürlük).
-- Panelde “Yeni anı ekle” butonu olacak ve eklenen anılar ilgili hayvan altında listelenecek.
+- Panelde "Yeni anı ekle" butonu olacak ve eklenen anılar ilgili sayfa altında listelenecek.
 - Fotoğraf sınırı 8 olacak; 8 üstü ücretli olacak.
 - Video maksimum 50 MB olacak.
 - Moderasyon/raporlama kurgusu olacak.
@@ -44,8 +44,8 @@ Müşteri için 2 temel panel olacak:
 - Panel 2: Yönetim sistemi
 
 Müşteri paneli:
-- Kullanıcının oluşturduğu tüm hayvanlar/sayfalar listelenecek ve her birinin yönetimi ayrı yapılacak.
-- Kullanıcı bir hayvan/sayfa seçip içerikleri, yorumları, üretim/QR durumunu ve temel metrikleri görebilecek.
+- Kullanıcının oluşturduğu tüm anı sayfaları listelenecek ve her birinin yönetimi ayrı yapılacak.
+- Kullanıcı bir sayfa seçip içerikleri, yorumları, üretim/QR durumunu ve temel metrikleri görebilecek.
 
 ## Roller / seviyeler
 - Müşteri hesabı
@@ -57,7 +57,7 @@ Müşteri paneli:
 - QR sabit kalacak, kullanıcı sayfayı güncelledikçe aynı QR yeni içeriği gösterecek.
 - Önizleme ve public ayrımı net olacak: Önizleme private, public sayfa yayın sonrası açık olacak.
 - Sayfa için yayından kaldırma seçeneği olacak; link/QR aynı kalsa da public görünürlük kapatılabilecek.
-- Yayından kaldırma ekranı: **Siyah arka plan** üzerinde **beyaz yazı** ile büyük şekilde sadece **ölen hayvanın ismi** yazacak.
+- Yayından kaldırma ekranı: **Siyah arka plan** üzerinde **beyaz yazı** ile büyük şekilde sadece **vefat edenin ismi** yazacak.
 
 ## Yorumlar
 - Ziyaretçiler yorum/anma mesajı bırakabilecek.
@@ -129,7 +129,7 @@ Müşteri paneli:
 | Yeni kayıt | İstenilen tarihler arasında |
 | Ödeme yapan kullanıcı | İstenilen tarihler arasında |
 | Yayına alınan sayfa | İstenilen tarihler arasında |
-| Yeni hayvan/sayfa oluşturma | İstenilen tarihler arasında |
+| Yeni anı sayfası oluşturma | İstenilen tarihler arasında |
 | 8 üstü foto hak satın alımı | İstenilen tarihler arasında |
 | Ücretli “Yeni QR talep et” | İstenilen tarihler arasında |
 | Destek talebi (kategori bazlı) | İstenilen tarihler arasında |
@@ -141,7 +141,7 @@ Müşteri paneli:
 #### Admin analitik filtreleri
 - Tarih aralığı
 - Kullanıcı
-- Hayvan/sayfa
+- Anı sayfası
 - Ürün türü (yeni sayfa / 8 üstü foto / yeni QR)
 
 ## Yetkilendirme kuralları
@@ -150,5 +150,3 @@ Müşteri paneli:
 | Müşteri | Kendi içeriklerini düzenler, yayınlar (genel yap)/yayından kaldırır, yorumları onaylar/siler, yorumları açar/kapatır, analitiği kendi sayfaları için görür, “Yeni QR talep et” isteği açar |
 | Üretici | Kendisine düşen işlerde üretim durumlarını günceller, “Yeni QR talep et” işlerini takip eder |
 | Admin | Kullanıcı yönetimi yapar, üretici hesaplarını yönetir, destek taleplerini yönetir, analitik ekranını görür, üretim süreçlerini izler, üretici aktivitelerini üretici adıyla görür |
-
-# An-kod
