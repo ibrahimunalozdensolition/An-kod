@@ -1,4 +1,4 @@
-# An-Kod 
+# An-Kod
 
 Vefat eden sevdiklerimiz (insan veya hayvan) için kişiselleştirilebilir bir anı sayfası oluşturulur. Bu sayfanın linki, fiziksel olarak 3D basılan bir QR ile mezar taşına/plataya yerleştirilir.
 
@@ -147,6 +147,84 @@ Müşteri paneli:
 ## Yetkilendirme kuralları
 | Rol | Yetkiler |
 | --- | --- |
-| Müşteri | Kendi içeriklerini düzenler, yayınlar (genel yap)/yayından kaldırır, yorumları onaylar/siler, yorumları açar/kapatır, analitiği kendi sayfaları için görür, “Yeni QR talep et” isteği açar |
-| Üretici | Kendisine düşen işlerde üretim durumlarını günceller, “Yeni QR talep et” işlerini takip eder |
+| Müşteri | Kendi içeriklerini düzenler, yayınlar (genel yap)/yayından kaldırır, yorumları onaylar/siler, yorumları açar/kapatır, analitiği kendi sayfaları için görür, "Yeni QR talep et" isteği açar |
+| Üretici | Kendisine düşen işlerde üretim durumlarını günceller, "Yeni QR talep et" işlerini takip eder |
 | Admin | Kullanıcı yönetimi yapar, üretici hesaplarını yönetir, destek taleplerini yönetir, analitik ekranını görür, üretim süreçlerini izler, üretici aktivitelerini üretici adıyla görür |
+
+## Geliştirme Fazları
+
+### Faz 2: Müşteri Paneli - Anı Sayfası Oluşturma
+- [x] Anı sayfası oluşturma formu
+- [x] Şablon seçim sistemi
+- [x] Panel 1: Medya yükleme (foto/video)
+  - [x] 8 fotoğraf limiti kontrolü
+  - [x] Video boyut kontrolü (max 50 MB)
+- [x] İçerik düzenleme (kırpma, sıralama, görünürlük)
+- [x] Arka plan, yerleşim, efekt ayarları
+- [x] Önizleme sistemi (private)
+- [x] "Anılar" listesi (foto/video + tarih + açıklama + etiket)
+
+### Faz 3: Ödeme Sistemi
+- [x] Ödeme entegrasyonu (mock)
+- [x] Ödeme kalemleri:
+  - [x] Yeni anı sayfası (₺299)
+  - [x] 8+ fotoğraf için ek hak (₺99)
+  - [x] Yeni QR talebi (₺149)
+- [x] Ödeme başarı/hata yönetimi
+- [x] Ödeme sonrası sayfa public hale getirme
+
+### Faz 4: Public Sayfa ve QR
+- [x] Benzersiz link oluşturma sistemi
+- [x] Public anı sayfası görünümü
+- [x] QR kod oluşturma
+- [x] Yayınla/Yayından Kaldır özelliği
+- [x] Yayından kaldırma ekranı (siyah arka plan + beyaz yazı + isim)
+
+### Faz 5: Yorum Sistemi
+- [x] Ziyaretçi yorum bırakma (isim zorunlu)
+- [x] Müşteri panelinde yorum onaylama/silme
+- [x] Yorumları aç/kapat özelliği
+- [x] Spam/bot koruması (rate limiting)
+
+### Faz 6: Üretici Paneli
+- [x] Üretici hesabı ve paneli
+- [x] İş emri sistemi (durum makinesi)
+- [x] 5 aşamalı üretim durumu yönetimi
+- [x] "Yeni QR talep et" iş takibi (4 aşamalı)
+- [x] E-posta ve SMS bildirimleri
+- [x] Müşteri panelinde üretim durumu görünümü
+
+### Faz 7: Admin Paneli - Temel
+- [x] Kullanıcı yönetimi
+- [x] Üretici hesap yönetimi
+- [x] Müşteri yaşam döngüsü takibi
+- [x] Üretici aktivite kayıtları
+
+### Faz 8: Destek Sistemi
+- [x] Destek talebi oluşturma (müşteri)
+- [x] Destek talebi yönetimi (admin)
+- [x] Kategori ve durum sistemi
+
+### Faz 9: Analitik
+- [x] Müşteri analitik (kendi sayfaları için)
+- [x] Admin analitik (tüm sistem)
+- [x] QR okutma ve sayfa ziyaret metrikleri
+- [x] Tarih aralığı ve diğer filtreler
+- [x] Raporlama
+
+### Faz 10: Moderasyon ve İyileştirmeler
+- [x] İçerik moderasyonu/raporlama
+- [x] Güvenlik iyileştirmeleri
+- [x] Performans optimizasyonu
+- [x] Kullanıcı deneyimi düzeltmeleri
+
+### Faz 11: Test ve Yayın
+- Kapsamlı testler
+- Hata düzeltmeleri
+- Deployment ve production hazırlık
+
+### Önerilen Geliştirme Sırası
+1. **MVP (Minimum Viable Product):** Faz 1 → 2 → 3 → 4
+2. **Temel Özellikler:** Faz 5 → 6
+3. **Yönetim ve Analitik:** Faz 7 → 8 → 9
+4. **Tamamlama:** Faz 10 → 11

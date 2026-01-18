@@ -1,0 +1,26 @@
+# ANIKOD Proje Kuralları
+
+## Apple Design & Development Standartları
+
+Bu projede tüm UI/UX tasarım ve geliştirme kararları Apple'ın resmi standartlarına göre alınmalıdır.
+Detaylı referanslar için `apple.md` dosyasına bakın.
+
+### Temel Referanslar:
+- Apple Human Interface Guidelines: https://developer.apple.com/design/human-interface-guidelines/
+- SwiftUI Documentation: https://developer.apple.com/documentation/swiftui/
+- Apple Design Resources: https://developer.apple.com/design/resources/
+- SF Symbols: https://developer.apple.com/sf-symbols/
+
+## Kod Yazım Kuralları
+
+- Kod içine yorum satırı ekleme
+- İşlevsiz açıklamalar ekleme
+- Temiz ve minimal kod yaz
+- Apple'ın tasarım prensiplerine uy (layout, spacing, typography, color, motion)
+
+## TypeScript/Next.js
+
+- Firebase authentication ve Firestore kullanılıyor
+- Type safety'e dikkat et
+- Apple benzeri minimalist ve modern UI tasarımı
+- Responsive design Apple HIG layout kurallarına göre

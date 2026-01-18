@@ -1,0 +1,527 @@
+[debug] [2026-01-18T01:34:23.793Z] ----------------------------------------------------------------------
+[debug] [2026-01-18T01:34:23.795Z] Command:       /opt/homebrew/Cellar/node/24.8.0/bin/node /opt/homebrew/bin/firebase deploy
+[debug] [2026-01-18T01:34:23.795Z] CLI Version:   15.3.1
+[debug] [2026-01-18T01:34:23.795Z] Platform:      darwin
+[debug] [2026-01-18T01:34:23.795Z] Node Version:  v24.8.0
+[debug] [2026-01-18T01:34:23.795Z] Time:          Sun Jan 18 2026 04:34:23 GMT+0300 (GMT+03:00)
+[debug] [2026-01-18T01:34:23.795Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-01-18T01:34:24.562Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-18T01:34:24.562Z] > authorizing via signed-in user (ibrahimunalofficial@gmail.com)
+[debug] [2026-01-18T01:34:24.562Z] [iam] checking project anikod-4efde for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2026-01-18T01:34:24.563Z] Checked if tokens are valid: false, expires at: 1768682432910
+[debug] [2026-01-18T01:34:24.563Z] Checked if tokens are valid: false, expires at: 1768682432910
+[debug] [2026-01-18T01:34:24.563Z] > refreshing access token with scopes: []
+[debug] [2026-01-18T01:34:24.564Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2026-01-18T01:34:24.564Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-18T01:34:24.853Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2026-01-18T01:34:24.853Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2026-01-18T01:34:24.865Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions [none]
+[debug] [2026-01-18T01:34:24.866Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions x-goog-quota-user=projects/anikod-4efde
+[debug] [2026-01-18T01:34:24.866Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2026-01-18T01:34:25.818Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions 200
+[debug] [2026-01-18T01:34:25.818Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2026-01-18T01:34:25.818Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:25.818Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:25.819Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/anikod-4efde [none]
+[debug] [2026-01-18T01:34:26.336Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/anikod-4efde 200
+[debug] [2026-01-18T01:34:26.336Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/anikod-4efde {"projectId":"anikod-4efde","projectNumber":"875829063021","displayName":"ANIKOD","name":"projects/anikod-4efde","resources":{"hostingSite":"anikod-4efde"},"state":"ACTIVE","etag":"1_081800f3-76e4-4b8a-889f-244ec97c493f"}
+[debug] [2026-01-18T01:34:27.093Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:27.093Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:27.093Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites pageToken=&pageSize=10
+[debug] [2026-01-18T01:34:28.319Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites 200
+[debug] [2026-01-18T01:34:28.319Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites {"sites":[{"name":"projects/anikod-4efde/sites/anikod-4efde","defaultUrl":"https://anikod-4efde.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-18T01:34:28.320Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:28.320Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:28.320Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites 
+[debug] [2026-01-18T01:34:28.708Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites 200
+[debug] [2026-01-18T01:34:28.708Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites {"sites":[{"name":"projects/anikod-4efde/sites/anikod-4efde","defaultUrl":"https://anikod-4efde.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2026-01-18T01:34:28.708Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:28.708Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:28.709Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/anikod-4efde/webApps/-/config [none]
+[debug] [2026-01-18T01:34:29.657Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/anikod-4efde/webApps/-/config 200
+[debug] [2026-01-18T01:34:29.657Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/anikod-4efde/webApps/-/config {"projectId":"anikod-4efde","appId":"1:875829063021:web:b4cc9f9526db863da87e64","storageBucket":"anikod-4efde.firebasestorage.app","apiKey":"AIzaSyAXwcOEY2Xhtma4vvJYuuHA8z6oCI-wpR4","authDomain":"anikod-4efde.firebaseapp.com","messagingSenderId":"875829063021","measurementId":"G-QYZSTC0TPZ","projectNumber":"875829063021","version":"2"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 15.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2026-01-18T01:34:30.969Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:30.969Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:30.969Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites/anikod-4efde [none]
+[debug] [2026-01-18T01:34:31.392Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites/anikod-4efde 200
+[debug] [2026-01-18T01:34:31.392Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites/anikod-4efde {"name":"projects/anikod-4efde/sites/anikod-4efde","defaultUrl":"https://anikod-4efde.web.app","type":"DEFAULT_SITE"}
+[info] ▲ Next.js 16.1.2 (Turbopack)
+
+[info] - Environments: .env.local
+
+
+[info] ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+
+[info]   Creating an optimized production build ...
+
+[info] ✓ Compiled successfully in 3.0s
+
+[info]   Running TypeScript ...
+
+[info]   Collecting page data using 9 workers ...
+
+[info]   Generating static pages using 9 workers (0/20) ...
+
+[info]   Generating static pages using 9 workers (5/20) 
+
+[info]   Generating static pages using 9 workers (10/20) 
+
+[info]   Generating static pages using 9 workers (15/20) 
+
+[info] ✓ Generating static pages using 9 workers (20/20) in 261.9ms
+
+[info]   Finalizing page optimization ...
+
+[info] 
+
+[info] Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /admin
+├ ○ /admin/moderation
+├ ○ /admin/reports
+├ ○ /auth/login
+├ ○ /auth/signup
+├ ○ /auth/verify-phone
+├ ○ /dashboard
+├ ○ /dashboard/analytics
+├ ○ /dashboard/comments
+├ ○ /dashboard/create
+├ ƒ /dashboard/pages/[id]
+├ ○ /dashboard/payment
+├ ○ /dashboard/support
+├ ○ /hakkimizda
+├ ○ /iletisim
+├ ƒ /memory/[slug]
+├ ○ /nasil-calisir
+└ ○ /producer
+
+
+ƒ Proxy (Middleware)
+
+
+[info] ○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • middleware
+[info]  • non-static component /dashboard/pages/[id]/page
+[info]  • non-static component /memory/[slug]/page
+[info] 
+[debug] [2026-01-18T01:34:39.069Z] skipping /admin/moderation due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.069Z] skipping /admin due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.069Z] skipping /admin/reports due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.069Z] skipping /dashboard/analytics due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.069Z] skipping /dashboard/comments due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.069Z] skipping /dashboard/create due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.069Z] skipping /dashboard due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.069Z] skipping /dashboard/payment due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.069Z] skipping /dashboard/support due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.070Z] skipping /producer due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2026-01-18T01:34:39.080Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:39.080Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:39.080Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites/anikod-4efde [none]
+[debug] [2026-01-18T01:34:40.073Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites/anikod-4efde 200
+[debug] [2026-01-18T01:34:40.073Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/anikod-4efde/sites/anikod-4efde {"name":"projects/anikod-4efde/sites/anikod-4efde","defaultUrl":"https://anikod-4efde.web.app","type":"DEFAULT_SITE"}
+[debug] [2026-01-18T01:34:57.426Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "europe-west1"
+      },
+      "site": "anikod-4efde",
+      "rewrites": [
+        {
+          "source": "/**",
+          "function": {
+            "functionId": "ssranikod4efde",
+            "region": "europe-west1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/_global-error",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/_global-error/layout,_N_T_/_global-error/page,_N_T_/_global-error"
+            }
+          ]
+        },
+        {
+          "source": "/_not-found",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/_not-found/layout,_N_T_/_not-found/page,_N_T_/_not-found"
+            }
+          ]
+        },
+        {
+          "source": "/admin/reports",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/admin/layout,_N_T_/admin/reports/layout,_N_T_/admin/reports/page,_N_T_/admin/reports"
+            }
+          ]
+        },
+        {
+          "source": "/admin/moderation",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/admin/layout,_N_T_/admin/moderation/layout,_N_T_/admin/moderation/page,_N_T_/admin/moderation"
+            }
+          ]
+        },
+        {
+          "source": "/auth/signup",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/auth/layout,_N_T_/auth/signup/layout,_N_T_/auth/signup/page,_N_T_/auth/signup"
+            }
+          ]
+        },
+        {
+          "source": "/auth/verify-phone",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/auth/layout,_N_T_/auth/verify-phone/layout,_N_T_/auth/verify-phone/page,_N_T_/auth/verify-phone"
+            }
+          ]
+        },
+        {
+          "source": "/admin",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/admin/layout,_N_T_/admin/page,_N_T_/admin"
+            }
+          ]
+        },
+        {
+          "source": "/auth/login",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/auth/layout,_N_T_/auth/login/layout,_N_T_/auth/login/page,_N_T_/auth/login"
+            }
+          ]
+        },
+        {
+          "source": "/dashboard/analytics",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/dashboard/layout,_N_T_/dashboard/analytics/layout,_N_T_/dashboard/analytics/page,_N_T_/dashboard/analytics"
+            }
+          ]
+        },
+        {
+          "source": "/dashboard/create",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/dashboard/layout,_N_T_/dashboard/create/layout,_N_T_/dashboard/create/page,_N_T_/dashboard/create"
+            }
+          ]
+        },
+        {
+          "source": "/dashboard/comments",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/dashboard/layout,_N_T_/dashboard/comments/layout,_N_T_/dashboard/comments/page,_N_T_/dashboard/comments"
+            }
+          ]
+        },
+        {
+          "source": "/dashboard",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/dashboard/layout,_N_T_/dashboard/page,_N_T_/dashboard"
+            }
+          ]
+        },
+        {
+          "source": "/dashboard/payment",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/dashboard/layout,_N_T_/dashboard/payment/layout,_N_T_/dashboard/payment/page,_N_T_/dashboard/payment"
+            }
+          ]
+        },
+        {
+          "source": "/favicon.ico",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, max-age=0, must-revalidate"
+            },
+            {
+              "key": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+            }
+          ]
+        },
+        {
+          "source": "/dashboard/support",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/dashboard/layout,_N_T_/dashboard/support/layout,_N_T_/dashboard/support/page,_N_T_/dashboard/support"
+            }
+          ]
+        },
+        {
+          "source": "/hakkimizda",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/hakkimizda/layout,_N_T_/hakkimizda/page,_N_T_/hakkimizda"
+            }
+          ]
+        },
+        {
+          "source": "/iletisim",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/iletisim/layout,_N_T_/iletisim/page,_N_T_/iletisim"
+            }
+          ]
+        },
+        {
+          "source": "/nasil-calisir",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/nasil-calisir/layout,_N_T_/nasil-calisir/page,_N_T_/nasil-calisir"
+            }
+          ]
+        },
+        {
+          "source": "/producer",
+          "headers": [
+            {
+              "key": "x-nextjs-stale-time",
+              "value": "300"
+            },
+            {
+              "key": "x-nextjs-prerender",
+              "value": "1"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/producer/layout,_N_T_/producer/page,_N_T_/producer"
+            }
+          ]
+        },
+        {
+          "source": "/**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJjb25maWciOnsicHJvamVjdElkIjoiYW5pa29kLTRlZmRlIiwiYXBwSWQiOiIxOjg3NTgyOTA2MzAyMTp3ZWI6YjRjYzlmOTUyNmRiODYzZGE4N2U2NCIsInN0b3JhZ2VCdWNrZXQiOiJhbmlrb2QtNGVmZGUuZmlyZWJhc2VzdG9yYWdlLmFwcCIsImFwaUtleSI6IkFJemFTeUFYd2NPRVkyWGh0bWE0dnZKWXV1SEE4ejZvQ0ktd3BSNCIsImF1dGhEb21haW4iOiJhbmlrb2QtNGVmZGUuZmlyZWJhc2VhcHAuY29tIiwibWVzc2FnaW5nU2VuZGVySWQiOiI4NzU4MjkwNjMwMjEiLCJtZWFzdXJlbWVudElkIjoiRy1RWVpTVEMwVFBaIiwicHJvamVjdE51bWJlciI6Ijg3NTgyOTA2MzAyMSIsInZlcnNpb24iOiIyIn0sIl9hdXRoVG9rZW5TeW5jVVJMIjoiL19fc2Vzc2lvbiJ9; SameSite=Strict; Expires=2027-12-13T12:14:57.426Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase/anikod-4efde/hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase/anikod-4efde/functions",
+      "codebase": "firebase-frameworks-anikod-4efde"
+    }
+  ]
+}
+[debug] [2026-01-18T01:34:57.428Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-01-18T01:34:57.428Z] > authorizing via signed-in user (ibrahimunalofficial@gmail.com)
+[debug] [2026-01-18T01:34:57.428Z] [iam] checking project anikod-4efde for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2026-01-18T01:34:57.428Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:57.428Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:57.429Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions [none]
+[debug] [2026-01-18T01:34:57.429Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions x-goog-quota-user=projects/anikod-4efde
+[debug] [2026-01-18T01:34:57.429Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2026-01-18T01:34:57.855Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions 200
+[debug] [2026-01-18T01:34:57.855Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/anikod-4efde:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'anikod-4efde'...
+[info] 
+[info] i  deploying functions, storage, firestore, hosting 
+[debug] [2026-01-18T01:34:57.858Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:57.858Z] Checked if tokens are valid: true, expires at: 1768703663853
+[debug] [2026-01-18T01:34:57.858Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/anikod-4efde/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2026-01-18T01:34:57.858Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/anikod-4efde/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/anikod-4efde

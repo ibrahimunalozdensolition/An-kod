@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import { AuthProvider } from "@/lib/context/AuthContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -9,7 +10,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "QR Mezarlık - Anıları Sonsuza Dek Yaşat",
+  title: "ANIKOD - Anıları Sonsuza Dek Yaşat",
   description: "Sevdiğin dostun için özel bir anı sayfası oluştur. Mezarında QR kod ile sonsuza kadar ulaşılabilir olsun.",
 };
 
@@ -21,7 +22,9 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <body className={`${geistSans.variable} antialiased`}>
-        {children}
+        <AuthProvider>
+          {children}
+        </AuthProvider>
       </body>
     </html>
   );
