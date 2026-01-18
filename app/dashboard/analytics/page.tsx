@@ -6,6 +6,8 @@ import Navbar from "@/app/components/Navbar";
 import { useRequireAuth } from "@/lib/hooks/useRequireAuth";
 import { AnalyticsPeriod } from "@/lib/types/analytics";
 
+export const dynamic = 'force-dynamic';
+
 interface PageStats {
   id: string;
   name: string;

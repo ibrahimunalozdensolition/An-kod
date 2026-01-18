@@ -8,6 +8,8 @@ import { db } from "@/lib/firebase/config";
 import { COLLECTIONS } from "@/lib/firebase/collections";
 import Navbar from "@/app/components/Navbar";
 
+export const dynamic = 'force-dynamic';
+
 interface MemoryPage {
   id: string;
   userId: string;

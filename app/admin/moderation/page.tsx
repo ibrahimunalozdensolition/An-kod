@@ -5,6 +5,8 @@ import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
 import { useRequireAuth } from "@/lib/hooks/useRequireAuth";
 
+export const dynamic = 'force-dynamic';
+
 type ReportStatus = 'pending' | 'reviewed' | 'action_taken' | 'dismissed';
 type ReportType = 'spam' | 'inappropriate' | 'copyright' | 'other';
 

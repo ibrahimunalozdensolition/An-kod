@@ -5,6 +5,8 @@ import { useRequireAuth } from "@/lib/hooks/useRequireAuth";
 import Navbar from "@/app/components/Navbar";
 import { Order, OrderStatus, QROrderStatus, ORDER_STATUS_LABELS, QR_ORDER_STATUS_LABELS } from "@/lib/types/producer";
 
+export const dynamic = 'force-dynamic';
+
 const MOCK_ORDERS: Order[] = [
   {
     id: '1',

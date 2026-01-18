@@ -5,6 +5,8 @@ import Link from "next/link";
 import Navbar from "@/app/components/Navbar";
 import { useRequireAuth } from "@/lib/hooks/useRequireAuth";
 
+export const dynamic = 'force-dynamic';
+
 type ReportPeriod = '7d' | '30d' | '90d' | '1y';
 
 interface SystemReport {

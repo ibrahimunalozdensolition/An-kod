@@ -8,6 +8,8 @@ import { db } from "@/lib/firebase/config";
 import { COLLECTIONS } from "@/lib/firebase/collections";
 import { uploadProfilePhoto, uploadCoverPhoto, uploadMemoryMedia } from "@/lib/utils/storage";
 import Navbar from "@/app/components/Navbar";
+
+export const dynamic = 'force-dynamic';
 import TemplateSelector from "@/app/components/create/TemplateSelector";
 import BasicInfoForm from "@/app/components/create/BasicInfoForm";
 import MediaUploader from "@/app/components/create/MediaUploader";

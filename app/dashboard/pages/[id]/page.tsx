@@ -9,6 +9,8 @@ import { useRequireAuth } from "@/lib/hooks/useRequireAuth";
 import { db } from "@/lib/firebase/config";
 import { COLLECTIONS } from "@/lib/firebase/collections";
 
+export const dynamic = 'force-dynamic';
+
 interface MemoryPageData {
   id: string;
   name: string;

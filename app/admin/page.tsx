@@ -5,6 +5,8 @@ import Link from "next/link";
 import { useRequireAuth } from "@/lib/hooks/useRequireAuth";
 import Navbar from "@/app/components/Navbar";
 
+export const dynamic = 'force-dynamic';
+
 type TabType = 'overview' | 'users' | 'producers' | 'orders';
 
 interface User {

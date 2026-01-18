@@ -6,6 +6,8 @@ import Navbar from "@/app/components/Navbar";
 import { useRequireAuth } from "@/lib/hooks/useRequireAuth";
 import { Ticket, TicketStatus, TicketCategory, TicketPriority, TICKET_CATEGORY_LABELS, TICKET_STATUS_LABELS, TICKET_PRIORITY_LABELS } from "@/lib/types/support";
 
+export const dynamic = 'force-dynamic';
+
 const MOCK_TICKETS: Ticket[] = [
   {
     id: '1',

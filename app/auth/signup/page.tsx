@@ -9,6 +9,8 @@ import { useAuth } from "@/lib/context/AuthContext";
 import { signUpSchema, SignUpFormData } from "@/lib/validations/auth";
 import Navbar from "@/app/components/Navbar";
 
+export const dynamic = 'force-dynamic';
+
 export default function SignUpPage() {
   const router = useRouter();
   const { signUp } = useAuth();

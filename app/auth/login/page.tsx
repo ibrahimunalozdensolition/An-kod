@@ -9,6 +9,8 @@ import { useAuth } from "@/lib/context/AuthContext";
 import { signInSchema, SignInFormData } from "@/lib/validations/auth";
 import Navbar from "@/app/components/Navbar";
 
+export const dynamic = 'force-dynamic';
+
 export default function LoginPage() {
   const router = useRouter();
   const { signIn } = useAuth();

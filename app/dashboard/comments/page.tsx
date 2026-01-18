@@ -6,6 +6,8 @@ import Navbar from "@/app/components/Navbar";
 import { useRequireAuth } from "@/lib/hooks/useRequireAuth";
 import { Comment, CommentStatus } from "@/lib/types/comment";
 
+export const dynamic = 'force-dynamic';
+
 const MOCK_COMMENTS: Comment[] = [
   {
     id: '1',

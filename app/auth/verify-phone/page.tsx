@@ -11,6 +11,8 @@ import { useAuth } from "@/lib/context/AuthContext";
 import { phoneVerificationSchema, PhoneVerificationFormData } from "@/lib/validations/auth";
 import Navbar from "@/app/components/Navbar";
 
+export const dynamic = 'force-dynamic';
+
 declare global {
   interface Window {
     recaptchaVerifier: RecaptchaVerifier;

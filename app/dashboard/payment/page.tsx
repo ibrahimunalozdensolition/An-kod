@@ -6,6 +6,8 @@ import { useRequireAuth } from "@/lib/hooks/useRequireAuth";
 import Navbar from "@/app/components/Navbar";
 import { PaymentType, PaymentItem, PAYMENT_ITEMS } from "@/lib/types/payment";
 
+export const dynamic = 'force-dynamic';
+
 type PaymentStep = 'select' | 'checkout' | 'processing' | 'success';
 
 const icons: Record<string, React.ReactNode> = {
