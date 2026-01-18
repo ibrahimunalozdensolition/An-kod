@@ -90,7 +90,7 @@ export default function VerifyPhonePage() {
   };
 
   const onSubmit = async (data: PhoneVerificationFormData) => {
-    if (!user) return;
+    if (!user || !db) return;
 
     try {
       setError("");
